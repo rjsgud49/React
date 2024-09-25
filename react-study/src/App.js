@@ -87,7 +87,11 @@ function resatGame() {
 }
 
 function Game() {
-    return <button onClick={resatGame}>Reset</button>;
+    return (
+        <button class="reset" onClick={resatGame}>
+            Reset
+        </button>
+    );
 }
 
 function App() {
@@ -95,6 +99,10 @@ function App() {
         <div className="game">
             <div className="game-board">
                 <Board />
+            </div>
+            <div className="game-reset">
+                {/* Reset 버튼 추가 */}
+                <Game />
             </div>
         </div>
     );
