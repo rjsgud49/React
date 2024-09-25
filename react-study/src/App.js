@@ -83,8 +83,11 @@ function calculateWinner(squares) {
 }
 
 function resatGame() {
-    <button onClick={resatGame}>Reset</button>;
     window.location.reload();
+}
+
+function Game() {
+    return <button onClick={resatGame}>Reset</button>;
 }
 
 function App() {
