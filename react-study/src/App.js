@@ -101,7 +101,6 @@ function App() {
                 <Board />
             </div>
             <div className="game-reset">
-                {/* Reset 버튼 추가 */}
                 <Game />
             </div>
         </div>
